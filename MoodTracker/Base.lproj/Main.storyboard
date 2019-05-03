@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="FoodTracker" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Btm-RR-a3H">
+                                <rect key="frame" x="0.0" y="40" width="375" height="476.5"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="BRy-MH-E44">
+                                        <rect key="frame" x="27.5" y="0.0" width="320" height="476.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mood Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dun-xx-vIb">
+                                                <rect key="frame" x="113.5" y="0.0" width="93.5" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter current mood" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zfJ-1c-Nkc">
+                                                <rect key="frame" x="0.0" y="28.5" width="320" height="30"/>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
+                                            </textField>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="TDX-Sk-KzN" customClass="RatingControl" customModule="FoodTracker" customModuleProvider="target">
+                                                <rect key="frame" x="34" y="66.5" width="252" height="44"/>
+                                            </stackView>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Pick a date" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vM0-Wc-nqV">
+                                                <rect key="frame" x="0.0" y="118.5" width="320" height="30"/>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="defaultPhoto" translatesAutoresizingMaskIntoConstraints="NO" id="l0q-rA-QCh">
+                                                <rect key="frame" x="0.0" y="156.5" width="320" height="320"/>
+                                                <gestureRecognizers/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="l0q-rA-QCh" secondAttribute="height" multiplier="1:1" id="BHq-ng-iYQ"/>
+                                                    <constraint firstAttribute="height" constant="320" id="ECv-uX-M2J"/>
+                                                    <constraint firstAttribute="width" constant="320" id="K3J-kh-rvM"/>
+                                                    <constraint firstAttribute="width" secondItem="l0q-rA-QCh" secondAttribute="height" multiplier="64:61" id="OFl-bd-9fr"/>
+                                                    <constraint firstAttribute="width" secondItem="l0q-rA-QCh" secondAttribute="height" multiplier="306:305" id="ORz-0b-9WF"/>
+                                                    <constraint firstAttribute="width" secondItem="l0q-rA-QCh" secondAttribute="height" multiplier="321:320" id="ReF-fu-V3g"/>
+                                                    <constraint firstAttribute="width" secondItem="l0q-rA-QCh" secondAttribute="height" multiplier="320:319" id="cKA-yq-iSd"/>
+                                                    <constraint firstAttribute="width" secondItem="l0q-rA-QCh" secondAttribute="height" multiplier="320:319" id="lbr-UE-1zv"/>
+                                                </constraints>
+                                                <variation key="default">
+                                                    <mask key="constraints">
+                                                        <exclude reference="K3J-kh-rvM"/>
+                                                        <exclude reference="OFl-bd-9fr"/>
+                                                        <exclude reference="ORz-0b-9WF"/>
+                                                        <exclude reference="ReF-fu-V3g"/>
+                                                        <exclude reference="cKA-yq-iSd"/>
+                                                        <exclude reference="lbr-UE-1zv"/>
+                                                    </mask>
+                                                </variation>
+                                                <connections>
+                                                    <outletCollection property="gestureRecognizers" destination="36i-yW-i6l" appends="YES" id="Uvg-NW-1ME"/>
+                                                </connections>
+                                            </imageView>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="zfJ-1c-Nkc" secondAttribute="trailing" id="fLO-Xt-I4G"/>
+                                            <constraint firstItem="vM0-Wc-nqV" firstAttribute="leading" secondItem="BRy-MH-E44" secondAttribute="leading" id="kz0-Nt-9or"/>
+                                            <constraint firstItem="zfJ-1c-Nkc" firstAttribute="leading" secondItem="BRy-MH-E44" secondAttribute="leading" id="sNx-vE-1Wl"/>
+                                            <constraint firstAttribute="trailing" secondItem="vM0-Wc-nqV" secondAttribute="trailing" id="wLR-eg-Fmx"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Btm-RR-a3H" secondAttribute="trailing" id="JzQ-Wz-YKA"/>
+                            <constraint firstItem="Btm-RR-a3H" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="Msf-w6-JKT"/>
+                            <constraint firstItem="Btm-RR-a3H" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Xjf-JE-bGc"/>
+                            <constraint firstAttribute="trailing" secondItem="Btm-RR-a3H" secondAttribute="trailing" id="YB7-yY-7WU"/>
+                            <constraint firstItem="Btm-RR-a3H" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="bZS-iD-bAe"/>
+                            <constraint firstItem="Btm-RR-a3H" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="iZH-5b-tll"/>
+                            <constraint firstItem="Btm-RR-a3H" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="jZu-mC-uWP"/>
+                            <constraint firstItem="Btm-RR-a3H" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="kB3-o5-Lck"/>
+                            <constraint firstItem="Btm-RR-a3H" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="lvV-yv-bTA"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="JzQ-Wz-YKA"/>
+                                <exclude reference="Msf-w6-JKT"/>
+                                <exclude reference="Xjf-JE-bGc"/>
+                                <exclude reference="iZH-5b-tll"/>
+                                <exclude reference="jZu-mC-uWP"/>
+                                <exclude reference="kB3-o5-Lck"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="dateTextField" destination="vM0-Wc-nqV" id="xEP-wC-2zS"/>
+                        <outlet property="moodNameLabel" destination="Dun-xx-vIb" id="O9q-mN-WIC"/>
+                        <outlet property="nameTextField" destination="zfJ-1c-Nkc" id="djQ-5u-vou"/>
+                        <outlet property="photoImageView" destination="l0q-rA-QCh" id="cKc-hs-eTI"/>
+                        <outlet property="ratingControl" destination="TDX-Sk-KzN" id="N1Q-zT-GFB"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="36i-yW-i6l">
+                    <connections>
+                        <action selector="selectImageFromPhotoLibrary:" destination="BYZ-38-t0r" id="bdp-6t-xOp"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="140" y="131.78410794602701"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="defaultPhoto" width="1024" height="768"/>
+    </resources>
+</document>
